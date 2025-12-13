@@ -39,3 +39,19 @@ footer {
   font-size: 0.9em;
   color: #555;
 }
+/* Navigation – simple academic style */
+.nav {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+
+.nav a {
+  margin-right: 18px;
+  font-weight: bold;
+  color: #002244;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
