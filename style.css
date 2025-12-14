@@ -1,3 +1,7 @@
+/* =========================
+   Base Layout
+   ========================= */
+
 body {
   font-family: "Georgia", "Times New Roman", serif;
   background-color: #f4f1ec;
@@ -8,50 +12,96 @@ body {
   line-height: 1.7;
 }
 
+/* =========================
+   Headings
+   ========================= */
+
 h1 {
   font-size: 2.6em;
   letter-spacing: 1px;
+  margin-top: 30px;
 }
 
 h2 {
-  margin-top: 40px;
+  font-size: 1.4em;
+  margin-top: 50px;
   border-bottom: 1px solid #999;
   padding-bottom: 5px;
 }
 
+h3 {
+  font-size: 1.1em;
+  margin-top: 30px;
+}
+
+/* =========================
+   Navigation Bar
+   ========================= */
+
+.nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #999;
+}
+
+.nav a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #002244;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Text & Links
+   ========================= */
+
+p {
+  text-align: justify;
+}
+
 a {
   color: #003366;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+/* =========================
+   Tagline
+   ========================= */
+
+.tagline {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* =========================
+   Dividers
+   ========================= */
+
 hr {
-  margin: 30px 0;
+  margin: 40px 0;
   border: none;
   border-top: 1px solid #aaa;
 }
 
+/* =========================
+   Footer / Small Text
+   ========================= */
+
 footer {
   font-size: 0.9em;
   color: #555;
-}
-/* Navigation – simple academic style */
-.nav {
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #999;
-}
-
-.nav a {
-  margin-right: 18px;
-  font-weight: bold;
-  color: #002244;
-}
-
-.nav a:hover {
-  text-decoration: underline;
 }
