@@ -1,107 +1,112 @@
-/* =========================
-   Base Layout
-   ========================= */
-
-body {
-  font-family: "Georgia", "Times New Roman", serif;
-  background-color: #f4f1ec;
-  color: #1a1a1a;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  line-height: 1.7;
+body{
+    margin:0;
+    padding:0;
+    background:#f3efe6;
+    color:#2b2b2b;
+    font-family:Georgia, serif;
+    line-height:1.9;
 }
 
-/* =========================
-   Headings
-   ========================= */
-
-h1 {
-  font-size: 2.6em;
-  letter-spacing: 1px;
-  margin-top: 30px;
+.nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(243,239,230,0.95);
+    border-bottom:1px solid #c9c0b3;
+    padding:18px 0;
+    text-align:center;
+    z-index:1000;
 }
 
-h2 {
-  font-size: 1.4em;
-  margin-top: 50px;
-  border-bottom: 1px solid #999;
-  padding-bottom: 5px;
+.nav a{
+    color:#2b2b2b;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
 }
 
-h3 {
-  font-size: 1.1em;
-  margin-top: 30px;
+.hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
 }
 
-/* =========================
-   Navigation Bar
-   ========================= */
-
-.nav {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 40px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #999;
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(60%);
 }
 
-.nav a {
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #002244;
-  text-decoration: none;
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#f3efe6;
+    text-align:center;
+    width:90%;
+    max-width:900px;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.hero-content h1{
+    font-size:70px;
+    letter-spacing:4px;
+    margin-bottom:20px;
 }
 
-/* =========================
-   Text & Links
-   ========================= */
-
-p {
-  text-align: justify;
+.hero-content p{
+    font-size:22px;
+    line-height:1.8;
 }
 
-a {
-  color: #003366;
-  font-weight: bold;
-  text-decoration: none;
+.section{
+    width:88%;
+    max-width:1100px;
+    margin:auto;
+    padding:100px 0;
 }
 
-a:hover {
-  text-decoration: underline;
+.section h2{
+    font-size:38px;
+    margin-bottom:30px;
+    border-bottom:1px solid #c2b8a8;
+    padding-bottom:12px;
 }
 
-/* =========================
-   Tagline
-   ========================= */
-
-.tagline {
-  font-size: 1.1em;
-  margin-bottom: 30px;
-  color: #333;
+.essay-card{
+    margin-bottom:80px;
 }
 
-/* =========================
-   Dividers
-   ========================= */
-
-hr {
-  margin: 40px 0;
-  border: none;
-  border-top: 1px solid #aaa;
+.essay-card img{
+    width:100%;
+    border:1px solid #b8ae9d;
+    margin-bottom:25px;
 }
 
-/* =========================
-   Footer / Small Text
-   ========================= */
+.essay-card h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
 
-footer {
-  font-size: 0.9em;
-  color: #555;
+.essay-card p{
+    font-size:18px;
+}
+
+.quote{
+    font-size:28px;
+    text-align:center;
+    font-style:italic;
+    max-width:900px;
+    margin:120px auto;
+    color:#5c5348;
+}
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    border-top:1px solid #c2b8a8;
+    color:#6d655c;
 }
