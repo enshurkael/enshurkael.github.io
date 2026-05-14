@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +11,11 @@
 
 <body>
 
-<nav class="nav">
+<div class="menu-btn" onclick="toggleMenu()">
+☰
+</div>
+
+<nav class="nav" id="menu">
 <a href="index.html">Home</a>
 <a href="theory.html">Research</a>
 <a href="observations.html">Observations</a>
@@ -20,13 +25,15 @@
 <section class="hero">
 
 <div class="hero-content">
+
 <h1>ENSHUR-KAEL</h1>
 
 <p>
-Ancient knowledge.  
-Hidden physiology.  
+Ancient knowledge.<br>
+Hidden physiology.<br>
 Spiritual systems interpreted through science.
 </p>
+
 </div>
 
 </section>
@@ -37,8 +44,8 @@ Spiritual systems interpreted through science.
 
 <p>
 Human civilization repeatedly described the body through energy,
-elements, rhythm, balance, consciousness, heat, breath, emotion,
-and environmental interaction.
+elements, rhythm, balance, consciousness,
+heat, breath, emotion, and environmental interaction.
 </p>
 
 <p>
@@ -86,6 +93,22 @@ into one unified system.
 Enshur-Kael — Independent Research Archive
 
 </footer>
+
+<script>
+function toggleMenu() {
+
+var menu = document.getElementById("menu");
+
+if(menu.style.display === "flex"){
+menu.style.display = "none";
+}
+
+else{
+menu.style.display = "flex";
+}
+
+}
+</script>
 
 </body>
 </html>
