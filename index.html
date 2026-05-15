@@ -1,51 +1,66 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enshur-Kael</title>
+<title>ENSHUR-KAEL</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="menu-btn" onclick="toggleMenu()">
-☰
+<!-- TOP NAVBAR -->
+<nav class="nav">
+
+<div class="logo">
+ENSHUR-KAEL
 </div>
 
-<nav class="nav" id="menu">
-<a href="index.html">Home</a>
-<a href="theory.html">Research</a>
-<a href="observations.html">Observations</a>
-<a href="about.html">About</a>
+<div class="menu-toggle" onclick="toggleMenu()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<div class="nav-links" id="navLinks">
+<a href="#">Home</a>
+<a href="#">Research</a>
+<a href="#">Observations</a>
+<a href="#">About</a>
+</div>
+
 </nav>
 
+<!-- HERO VIDEO -->
 <section class="hero">
 
-<div class="hero-content">
+<video autoplay muted loop playsinline>
+<source src="intro.mp4" type="video/mp4">
+</video>
 
+<div class="overlay"></div>
+
+<div class="hero-text">
 <h1>ENSHUR-KAEL</h1>
 
 <p>
-Ancient knowledge.<br>
-Hidden physiology.<br>
-Spiritual systems interpreted through science.
+Ancient knowledge. Hidden physiology.
+Spiritual systems explored through observation,
+symbolism, consciousness, and forgotten sciences.
 </p>
-
 </div>
 
 </section>
 
+<!-- CONTENT -->
 <section class="section">
 
 <h2>The Central Idea</h2>
 
 <p>
 Human civilization repeatedly described the body through energy,
-elements, rhythm, balance, consciousness,
-heat, breath, emotion, and environmental interaction.
+elements, rhythm, balance, consciousness, heat, breath,
+emotion, and environmental interaction.
 </p>
 
 <p>
@@ -58,55 +73,11 @@ This archive explores the possibility that ancient spiritual systems
 were early observational sciences expressed through symbolic language.
 </p>
 
-<img src="archive.jpg">
-
-<div class="quote">
-“Perhaps ancient medicine was not primitive mythology —
-but an early language of systems biology.”
-</div>
-
-<h2>Research Direction</h2>
-
-<p>
-This project investigates recurring patterns across ancient traditions:
-Ayurveda, Greek humoral theory, Persian medicine,
-alchemy, yogic systems, consciousness traditions,
-temple healing practices, and energetic physiology.
-</p>
-
-<p>
-The goal is not religion.
-The goal is pattern recognition.
-</p>
-
-<p>
-Many ancient medical frameworks attempted to connect:
-mind, body, climate, emotion, digestion, sleep,
-aging, disease progression, and human awareness
-into one unified system.
-</p>
-
 </section>
-
-<footer>
-
-Enshur-Kael — Independent Research Archive
-
-</footer>
 
 <script>
 function toggleMenu() {
-
-var menu = document.getElementById("menu");
-
-if(menu.style.display === "flex"){
-menu.style.display = "none";
-}
-
-else{
-menu.style.display = "flex";
-}
-
+document.getElementById("navLinks").classList.toggle("active");
 }
 </script>
 
